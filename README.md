@@ -10,6 +10,7 @@ Build Instruction
 
     git clone https://github.com/davll/PTAM-GPL.git PTAM
     cd PTAM
+    brew tap homebrew/science
     brew tap davll/reality
     brew install toon cmake opencv
     brew install gvars3.rb libcvd.rb
