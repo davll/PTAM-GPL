@@ -4,8 +4,7 @@ project(PTAM)
 find_package(OpenCV REQUIRED)
 find_package(X11 REQUIRED)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libstdc++ -D_OSX")
-set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -stdlib=libstdc++ -L/opt/X11/lib")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -D_LINUX")
 
 include_directories(Src ${OpenCV_INCLUDE_DIR} ${X11_INCLUDE_DIR})
 

@@ -23,9 +23,9 @@
 #include <cstdio>
 #include <cstdlib>
 #include <iostream>
-#include <opencv2/core.hpp>
-#include <opencv2/imgproc.hpp>
-#include <opencv2/highgui.hpp>
+#include <opencv2/core/core.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
+#include <opencv2/highgui/highgui.hpp>
 
 using namespace CVD;
 //using namespace std;
@@ -45,8 +45,8 @@ VideoSource::VideoSource()
   }
   std::cout << "  ... got video source." << std::endl;
   
-  int width = (int) cap->get(cv::CAP_PROP_FRAME_WIDTH);
-  int height = (int) cap->get(cv::CAP_PROP_FRAME_HEIGHT);
+  int width = (int) cap->get(CV_CAP_PROP_FRAME_WIDTH);
+  int height = (int) cap->get(CV_CAP_PROP_FRAME_HEIGHT);
   
   mirSize = ImageRef(width, height);
 };
