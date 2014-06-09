@@ -45,8 +45,8 @@ VideoSource::VideoSource()
   }
   std::cout << "  ... got video source." << std::endl;
   
-  int width = (int) cap->get(CV_CAP_PROP_FRAME_WIDTH);
-  int height = (int) cap->get(CV_CAP_PROP_FRAME_HEIGHT);
+  int width = (int) cap->get(cv::CAP_PROP_FRAME_WIDTH);
+  int height = (int) cap->get(cv::CAP_PROP_FRAME_HEIGHT);
   
   mirSize = ImageRef(width, height);
 };
