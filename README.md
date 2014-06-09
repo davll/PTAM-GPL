@@ -3,6 +3,26 @@ PTAM-GPL
 
 PTAM (Parallel Tracking and Mapping) re-released under GPLv3.
 
+Target Platform: OS X Mavericks
+
+Build Instruction
+-----------------
+
+    git clone https://github.com/davll/PTAM-GPL.git PTAM
+    cd PTAM
+    brew tap davll/reality
+    brew install toon cmake opencv
+    brew install gvars3.rb libcvd.rb
+    
+    mkdir build
+    cd build
+    cmake ..
+    make -j4
+    
+    cd ..
+    ./build/CameraCalibrator
+    ./build/PTAM
+
 What is PTAM
 ------------
 
